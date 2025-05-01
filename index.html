@@ -16,7 +16,8 @@
       padding: 30px;
       background-color: #fff;
       display: inline-block;
-      max-width: 700px;
+      max-width: 600px;
+      position: relative;
     }
     h1 {
       color: #1a1a1a;
@@ -25,32 +26,35 @@
       font-size: 16px;
       color: #333;
     }
-    .logos {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .logos img {
-      height: 60px;
-    }
-    img.qr {
+    .qr {
       margin-top: 20px;
       width: 160px;
+    }
+    .logo-left {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 60px;
+    }
+    .logo-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      height: 60px;
     }
   </style>
 </head>
 <body>
   <div class="badge">
-    <div class="logos">
-      <img src="applejam-logo.png" alt="AppleJam Logo" />
-      <img src="diego-tribuzzi-logo.png" alt="Diego Tribuzzi Logo" />
-    </div>
+    <img src="AppleJam_Logo.jpeg" alt="Logo AppleJam" class="logo-left" />
+    <img src="DiegoTribuzzi_Logo.jpeg" alt="Logo Diego Tribuzzi" class="logo-right" />
+
     <h1>Accesso Riservato – AppleJam SecureVault</h1>
     <p>Questo badge contiene dati personali sensibili riservati a <strong>Diego Tribuzzi</strong>.</p>
     <p>Per accedere, visita il link sottostante e inserisci la password:</p>
     <p><strong>Password:</strong> AppleJamRuben2025!</p>
     <p><a href="https://applejam-project.net/riservato-diego">applejam-project.net/riservato-diego</a></p>
+
     <img src="qr-code.png" alt="QR Code" class="qr" />
   </div>
 </body>
